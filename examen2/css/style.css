@@ -1,0 +1,228 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #666;
+	background: #f2f2f2;
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+h1 {
+  color: white;
+	font-size: 1.9em;
+	line-height: 1.3em;
+	margin: 15px 0;
+	text-align: left;
+	font-weight: 300;
+}
+
+h2{
+  color: #e60036;
+}
+
+p {
+	margin: 0 0 1.5em 0;
+}
+
+
+.content-title{
+  background-color: #2d1334;
+}
+
+
+
+#main-header {
+	background: #2d1334;
+	color: white;
+	height: 80px;
+}
+	#main-header a {
+		color: white;
+	}
+
+
+#logo-header {
+	float: left;
+	padding: 15px 0 0 20px;
+	text-decoration: none;
+}
+	#logo-header:hover {
+		color: #e60036;
+	}
+
+	#logo-header .site-name {
+		display: block;
+		font-weight: 700;
+		font-size: 1.2em;
+	}
+
+	#logo-header .site-desc {
+		display: block;
+		font-weight: 300;
+		font-size: 0.8em;
+		color: #999;
+	}
+
+
+
+nav {
+	float: right;
+}
+	nav ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		padding-right: 20px;
+	}
+
+		nav ul li {
+			display: inline-block;
+			line-height: 80px;
+		}
+
+			nav ul li a {
+				display: block;
+				padding: 0 10px;
+				text-decoration: none;
+			}
+
+				nav ul li a:hover {
+					background: #e60036;
+				}
+
+
+
+
+
+
+        #main-content {
+        	background: white;
+        	width: 90%;
+        	max-width: 900px;
+        	margin: 20px auto;
+        	box-shadow: 0 0 10px rgba(0,0,0,.1);
+        }
+
+        #main-content2 {
+        	background: #e60036;
+        	width: 90%;
+        	max-width: 900px;
+        	margin: 20px auto;
+        	box-shadow: 0 0 10px rgba(0,0,0,.1);
+        }
+
+        	#main-content header,
+        	#main-content .content {
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 9px;
+            padding-bottom: 10px;
+        	}
+
+          #main-content2 header,
+        	#main-content2 .content {
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 9px;
+            padding-bottom: 10px;
+        	}
+
+
+          #main-header h2{
+            color: white;
+          }
+
+
+
+
+          #main-footer {
+	background: #2d1334;
+	color: white;
+	text-align: center;
+	padding: 20px;
+	margin-top: 40px;
+}
+	#main-footer p {
+		margin: 0;
+	}
+
+	#main-footer a {
+		color: white;
+	}
+
+
+
+
+
+  #main-header {
+	background: #2d1334;
+	color: white;
+	height: 80px;
+	width: 100%;
+	left: 0;
+	top: 0;
+	/* position: fixed; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Input-text {
+  display: block;
+  margin: 0;
+  color: inherit;
+  width: 100%;
+  font-family: inherit;
+  font-size: var(--inputFontSize);
+  font-weight: inherit;
+  line-height: var(--inputLineHeight);
+  border: none;
+  border-radius: 0.4rem;
+}
+.Input-text2 {
+  display: block;
+  margin: 0;
+  color: inherit;
+  width: 100%;
+  max-width: 1000px;
+  font-family: inherit;
+  font-size: var(--inputFontSize);
+  font-weight: inherit;
+  line-height: var(--inputLineHeight);
+  border: none;
+  border-radius: 0.4rem;
+}
+
+
+
+.myButton {
+  display: block;
+	background-color:#2d1334;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	text-decoration:none;
+  text-align: center;
+  width: 100%;
+  height: 40px;
+}
+.myButton:hover {
+	background-color:#a30026;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
