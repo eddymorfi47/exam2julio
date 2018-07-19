@@ -15,6 +15,7 @@
 		<nav>
 			<ul>
 				<li><a href="inputpost.php">Nuevo Post</a></li>
+				<li><a href="index.php">Volver al Inicio</a></li>
 				<nav>
 					<ul>
 
@@ -32,25 +33,24 @@
 
 
 	<?php
-
-			include_once("manejo.php");
+			include_once("manejobus.php");
 
 			try{
-				$miconexion=new PDO('mysql:host=localhost; dbname=blog', 'root', '');
+				$miconexionb=new PDO('mysql:host=localhost; dbname=blog', 'root', '');
 
-				$miconexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+				$miconexionb->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-				$manejo=new manejo($miconexion);
+				$manejobusb=new manejobus($miconexionb);
 
-				$tabla_blog=$manejo->getContenidoPorFecha();
+				$tabla_blogb=$manejobusb->getContenidoPorBus();
 
-				if(empty($tabla_blog)){
+				if(empty($tabla_blogb)){
 					PRINT <<<HERE
 					<section id="main-content">
 						<article>
 							<div class="content-title">
 							<header>
-								<h1>No Hay Blogs</h1>
+								<h1>No Hay Blogs Con ese titulo.</h1>
 							</header>
 						</article>
 					</section>
@@ -58,22 +58,22 @@ HERE;
 
 				}
 				else{
-					foreach($tabla_blog as $valor){
-						$titletitle= $valor->getTitulo();
-						$datedate= $valor->getFecha();
-						$contentcontent= $valor->getContenido();
+					foreach($tabla_blogb as $valorb){
+						$titletitleb= $valorb->getTitulo();
+						$datedateb= $valorb->getFecha();
+						$contentcontentb= $valorb->getContenido();
 						PRINT <<<HERE
 						<section id="main-content">
 
 							<article>
 								<div class="content-title">
 								<header>
-									<h1>$titletitle</h1>
-									<h2>$datedate</h2>
+									<h1>$titletitleb</h1>
+									<h2>$datedateb</h2>
 								</header>
 								</div>
 								<div class="content">
-									<p>$contentcontent</p>
+									<p>$contentcontentb</p>
 								</div>
 
 							</article>

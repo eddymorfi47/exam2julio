@@ -76,6 +76,7 @@ nav {
 		padding-right: 20px;
 	}
 
+
 		nav ul li {
 			display: inline-block;
 			line-height: 80px;
@@ -99,7 +100,7 @@ nav {
         #main-content {
         	background: white;
         	width: 90%;
-        	max-width: 900px;
+        	max-width: 1300px;
         	margin: 20px auto;
         	box-shadow: 0 0 10px rgba(0,0,0,.1);
         }
@@ -166,6 +167,15 @@ nav {
 }
 
 
+.searchbars{
+	margin-top: 20px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.responsearch{
+}
 
 
 
@@ -203,7 +213,36 @@ nav {
   border-radius: 0.4rem;
 }
 
+.Input-texts {
+	display: inline-block;
+	line-height: 80px;
+	background-color: #2d1334;
+  color: inherit;
+  width: 300px;
+  font-family: inherit;
+  font-size: var(--inputFontSize);
+  font-weight: inherit;
+  line-height: var(--inputLineHeight);
+  border: none;
+  border-radius: 0.4rem;
+}
+.Input-texts::placeholder {
+	color: #e60036;
+	text-align: center;
+}
 
+.myButtons {
+	background-color:#2d1334;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	text-decoration:none;
+  text-align: center;
+  height: auto;
+}
 
 .myButton {
   display: block;
